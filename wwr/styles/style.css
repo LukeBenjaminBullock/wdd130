@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Fredericka+the+Great&display=swap');
+:root {
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Fredericka the Great"; 
+    --paragraph-font: Cormorant Garamond, Helvetica, sans-serif;
+  }
+
 #content {
     max-width: 1600px; 
     margin: 0 auto; 
@@ -31,6 +40,10 @@ main section {
 
 body {
     background-color: black;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0; 
+    padding: 0; 
 }
 
 header {
@@ -40,12 +53,17 @@ header {
 nav a:hover {
     background-color: #390099;
     color: #00fffb;
+    padding: 35px
 }
 
 .book, .join {
     background-color: #822626;
     color: #FFBD00; 
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px; 
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -59,18 +77,26 @@ nav a:hover {
 
 .msg {
     background-color: #00fffb;
+    line-height: 1.5em;
+    padding: 35px
 }
 
 .msg h2 {
     color: #390099;
+    font-family: var(--heading-font);
 }
 
 .msg p {
     color: black;
+    /* font-weight: bold; I want to add this, but I dont want to deviate from the material*/
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #390099;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3 {
@@ -94,6 +120,10 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
     color: white;
 }
@@ -108,8 +138,40 @@ h4 {
 
 .icon {
     width: 80px;
+    padding-top: 10px; 
 }
 
 #hero-img {
     width: 100%;
 }
+
+.home-title {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2{
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid white;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Cormorant Garamond', serif;
+*/
