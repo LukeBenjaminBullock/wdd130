@@ -21,6 +21,7 @@ nav a{
     text-align: center;
     color: #FFBD00;
     text-decoration: none;
+    padding: 35px; 
 }
 
 #hero{
@@ -165,8 +166,7 @@ footer .social img {
 
 .home-grid {
     display: grid;
-    grid-template-columns: auto, 10; 
-    grid-template-rows: auto, 10; 
+    grid-template-columns: repeat(10, 1fr); 
     align-items: center;
 }
 
@@ -189,6 +189,7 @@ h4 {
 
 h2{
     margin: 0;
+    color: #00fffb;
 }
 
 #logo_link {
