@@ -297,7 +297,7 @@ main section img {
 #canyon-title{
     grid-column: 2/8;
     grid-row: 2/3;
-    padding-left: 10 px;
+    padding-left: 10px;
     text-align: left;
     align-self: center;
     color: #00fffb;
@@ -395,7 +395,7 @@ main section img {
     box-shadow: 5px 5px 10px #005499;
 }
 
-#italics{
+#italics_one, #italics_two, #italics_three{
     font-size: 16px;
 }
 
