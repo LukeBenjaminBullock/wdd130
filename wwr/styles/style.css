@@ -449,8 +449,27 @@ main section img {
     footer {
         margin-top: 25px;
     }
+
+    /* I suppose I should change my second page as well */
+
+    #one-background{
+        height: 95%;
+    }
+    
+    #two-background{
+        height: 95%;
+    }
+    
+    #three-background{
+        height: 95%;
+    }
+    
+    #four-background{
+        height: 95%;
+    }
 }
             
+
 
 /*
 font-family: 'Amatic SC', cursive;
