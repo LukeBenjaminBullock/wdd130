@@ -32,6 +32,7 @@ nav a{
 
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+    color: white;
 }
 
 #hero-msg {
@@ -253,6 +254,159 @@ main section img {
     box-shadow: 5px 5px 10px black;
 
 }
+
+/*Start any modification to the rates/dates page here*/
+
+.river-grid {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr); 
+    grid-template-rows: repeat(7, 1fr);
+    color:#ffcd43
+}
+
+#river-grid-title{
+    color:  white;
+    grid-column: 2/14;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: end;
+    margin-top:8em;
+    
+}
+
+#river-box{
+    text-align: center;
+    background-color: #390099;
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #005499;
+    margin: 2em;
+}
+
+.river-title{
+    color: #00fffb;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.subheader{
+    color: #ff0000;
+}
+
+#canyon-title{
+    grid-column: 2/8;
+    grid-row: 2/3;
+    padding-left: 10 px;
+    text-align: left;
+    align-self: center;
+    color: #00fffb;
+}
+
+#three_day_canyon{
+    grid-column: 2/8;
+    grid-row: 3/4; 
+    padding-left: 10px;
+}
+
+#six_day_canyon {
+    grid-column: 2/8; 
+    grid-row: 4/5;
+    padding-left: 10px;
+}
+
+#salmon_river {
+    grid-column: 2/8;
+    grid-row: 5/6; 
+    padding-left: 10px;
+}
+
+#desolation {
+    grid-column: 2/8; 
+    grid-row: 6/7;
+    padding-left: 10px;
+}
+
+#grand_canyon_img{
+    grid-column: 8/14;
+    grid-row: 3/4;
+    width: 90%;
+    max-height: 75%;
+    justify-self: center;
+}
+
+#six_day_canyon_img{
+    grid-column: 8/14;
+    grid-row: 4/5;
+    width: 90%;
+    max-height: 75%;
+    justify-self: center;
+}
+
+#salmon_river_img{
+    grid-column: 8/14;
+    grid-row: 5/6;
+    width: 90%;
+    max-height: 75%;
+    justify-self: center;
+}
+
+#desolation_img{
+    grid-column: 8/14;
+    grid-row: 6/7;
+    width: 90%;
+    max-height: 75%;
+    justify-self: center;
+}
+
+#one-background{
+    background-color: #005499;
+    grid-column: 2/12; 
+    grid-row: 3/4;
+    z-index: -1;
+    height: 80%;
+    box-shadow: 5px 5px 10px #822626;
+}
+
+#two-background{
+    background-color: #822626;
+    grid-column: 2/12; 
+    grid-row: 4/5;
+    z-index: -1;
+    height: 80%;
+    box-shadow: 5px 5px 10px #005499;
+}
+
+#three-background{
+    background-color: #005499;
+    grid-column: 2/12; 
+    grid-row: 5/6;
+    z-index: -1;
+    height: 80%;
+    box-shadow: 5px 5px 10px #822626;
+}
+
+#four-background{
+    background-color: #822626;
+    grid-column: 2/12; 
+    grid-row: 6/7;
+    z-index: -1;
+    height: 80%;
+    box-shadow: 5px 5px 10px #005499;
+}
+
+#italics{
+    font-size: 16px;
+}
+
+#final_text{
+    color: white;
+    grid-column: 4/12;
+    grid-row: 7/8;
+    align-self: center;
+}
+
+
 
 
 @media screen and (max-width: 900px) {
