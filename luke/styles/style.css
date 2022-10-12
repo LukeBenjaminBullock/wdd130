@@ -1,0 +1,18 @@
+
+#gallery{
+    margin:50px auto; 
+    width: 50%
+}
+
+#gallery-box, #one{
+    width:100%;
+}
+
+.btn{
+    border: none;
+    outline: none; 
+    background: rgb(255, 255, 255);
+    padding: 10px 30px; 
+    cursor: pointer; 
+    margin: 10px auto;
+}
