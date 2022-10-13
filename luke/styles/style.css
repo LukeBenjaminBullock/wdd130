@@ -1,11 +1,381 @@
 
-#gallery{
-    margin:50px auto; 
-    width: 50%
+/* Colors: (Red) #ff1e00; (Black) #000000; (Green) #1e6e01; (Yellow) #f1c92a;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nova+Cut&display=swap');
+
+:root{
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Nova Cut";
+    --paragraph-font: Marck Script, cursive, sans-serif;
 }
 
-#gallery-box, #one{
-    width:100%;
+/* Header */
+
+header{
+    display: grid; 
+    grid-template-columns: 200px auto;
+    background-color: black;
+    font-family: var(--heading-font);
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff1e00;
+}
+
+.logo {
+    width: 160px;
+    padding: 30px;
+}
+
+#handcrafts_header_box{
+    box-shadow: 10px 10px 30px #f1c92a;
+}
+
+#acting_header_box{
+    box-shadow: 10px 10px 30px #ff1e00;
+}
+
+#writing_header_box{
+    box-shadow: 10px 10px 30px #442af1;
+}
+
+/* Footer */
+
+#handcrafts_footer_box{
+    box-shadow: 10px 10px 30px #f1c92a;
+}
+
+#acting_footer_box{
+    box-shadow: 10px 10px 30px #ff1e00;
+    background-color: #1e6e01;
+}
+
+#writing_footer_box{
+    box-shadow: 10px 10px 30px #442af1;
+    background-color: #1e6e01;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 5fr 5fr 5fr 1fr 1fr;
+    color: white;
+    font-family: var(--heading-font);
+}
+
+footer p:nth-of-type(1) {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    align-self: center;
+}
+
+footer p:nth-of-type(2) {
+    grid-row: 1/2; 
+    grid-column: 2/3;
+    align-self: end;
+}
+
+footer p:nth-of-type(3) {
+    grid-row: 2/3; 
+    grid-column: 2/3;
+}
+
+footer p:nth-of-type(4) {
+    grid-row: 1/3; 
+    grid-column: 3/4;
+    align-self: center;
+    color:#f1c92a; 
+}
+
+footer a{
+    color:#f1c92a;
+}
+footer a:hover {
+    color:#ff1e00;
+}
+
+#social_one {
+    grid-row: 1/2; 
+    grid-column: 4/5;
+    justify-self: start;
+}
+
+#social_two {
+    grid-row: 2/3; 
+    grid-column: 4/6;
+    justify-self: center;
+    align-self: end;
+}
+
+#social_three {
+    grid-row: 1/2; 
+    grid-column: 5/6;
+    justify-self: end;
+}
+
+
+/* Handcrafts body */
+
+p {
+    justify-self: center;
+}
+
+#handcrafts_body{
+    background-color: #1e6e01;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0; 
+    padding:0; 
+    color: #f1c92a;
+}
+
+#handcrafts-title{
+    background-color: #144a00;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 30px;
+    margin-bottom: 400px;
+}
+
+#poster-img{
+    grid-row: 1/2;
+    min-width: 400px; 
+    width: 60%;
+    justify-self: center;
+    margin: 50px;
+}
+
+#handcrafts-title-msg{
+    margin: 50px;
+    grid-row: 2/3;
+}
+
+.section_one, .section_two, .section_three, .section_four, .section_five, .section_six, .section_seven{
+    display: grid; 
+    grid-template-rows: auto auto;
+    margin-top: 150px;
+    margin: 150px;
+}
+
+#img_one, #img_two, #img_three, #img_four, #img_five, #img_six {
+    min-width: 300px;
+    width: 40%;
+    grid-row: 1/2;
+    justify-self: center;
+    margin: 30px;
+    margin-top: 150px;
+}
+
+.section_one p, .section_two p, .section_three p, .section_four p, .section_five p, .section_six p, .section_seven p {
+    max-width: 80%;
+}
+
+.section_one {
+    background-color: #016e36;
+}
+
+.section_two {
+    background-color: #3d6e01;
+}
+
+.section_three {
+    background-color: #5f809554;
+}
+
+.section_four {
+    background-color: #6c6e0167;
+}
+
+.section_five {
+    background-color: #ff1e0031;
+}
+
+.section_six {
+    background-color: rgba(240, 248, 255, 0.205);
+}
+
+.section_seven {
+    background-color: #0000002f;
+}
+
+/* Acting Body */
+
+#acting_body{
+background-color: #000000;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0; 
+    padding:0; 
+    color: #ff1e00;
+    
+}
+
+#acting-title{
+    background-color: #000000;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 30px;
+    margin-bottom: 400px;
+    box-shadow: 0px 0px 30px #0000b0;
+}
+
+#forlorn-img{
+    grid-row: 1/2;
+    min-width: 400px; 
+    width: 60%;
+    justify-self: center;
+    margin: 50px;
+    margin-top: 100px;
+}
+
+#acting-title-msg{
+    margin: 50px;
+    grid-row: 2/3;
+}
+
+.acting_one, .acting_two, .acting_three{
+    display: grid; 
+    grid-template-rows: auto auto;
+    margin-top: 150px;
+    margin: 150px;
+    box-shadow: 0px 0px 30px #ff1e00;
+}
+
+#mathew_img, #stache_img, #strout_img {
+    min-width: 300px;
+    width: 40%;
+    grid-row: 1/2;
+    justify-self: center;
+    margin: 30px;
+    margin-top: 150px;
+}
+
+.acting_one p, .acting_two p, .acting_three p {
+    max-width: 80%;
+}
+
+#acting-headline-one, #acting-headline-two, #acting-headline-three {
+    display: flex;
+    justify-self: center;
+}
+
+#acting-headline-one p, #acting-headline-two p, #acting-headline-three p{
+    color: white;
+    width: 80%;
+}
+
+h3 {
+    font-family: var(--heading-font)
+}
+
+#acting-subtext-one, #acting-subtext-two, #acting-subtext-three{
+    color: white;
+}
+
+/* Writing Body */
+
+#writing_body{
+    background-color: #ffffff;
+        font-family: var(--paragraph-font);
+        font-size: 22px;
+        margin: 0; 
+        padding:0; 
+        color: #000000;
+    }
+
+    #writing-title{
+        margin: 100px;
+    }
+
+    #writing-title-msg{
+        margin: 150px;
+    }
+
+    .writing-main {
+        display: grid; 
+        grid-template-rows: 1fr 2fr 2fr auto auto; 
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    #library-img {
+        justify-self: center;
+        width: 95%;
+        grid-row: 1/2;
+        grid-column: 1/4; 
+    }
+
+    #first_button {
+        width: 50px; 
+        justify-self: center;
+    }
+
+    #second_button {
+        width: 50px; 
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    #prev_button { 
+        grid-row: 2/4; 
+        grid-column: 1/2;
+        justify-self: center;
+    }
+
+    #next_button {
+        width: 50px;
+        grid-row: 2/4; 
+        grid-column: 3/4;
+    }
+
+    #img-box {
+        width: 100%; 
+        grid-row: 2/4; 
+        grid-column: 2/3;
+        align-items: start;
+    }
+
+    #poem-title {
+        grid-row: 4/5;
+        grid-column: 1/4; 
+        text-align: center;
+    }
+
+    #poem-img{
+        grid-row: 5/6;
+        grid-column: 1/4; 
+        width: 80%;
+    }
+
+    #gallery {
+        justify-content: center;
+    }
+
+
+
+
+/* Button code starts here */
+
+#gallery{
+    margin: 0px auto; 
+    margin-bottom: 200px;
 }
 
 .btn{
@@ -15,4 +385,128 @@
     padding: 10px 30px; 
     cursor: pointer; 
     margin: 10px auto;
+}
+
+/* And of course, some changes for mobile devices */
+
+@media screen and (max-width: 900px) {
+
+    #header {
+        display: block;
+    }
+
+    nav p {
+        display: none;
+    }
+
+    nav {
+        display:block;
+        flex-direction: column;
+    }
+
+    .section_one, .section_two, .section_three, .section_four, .section_five, .section_six, .section_seven{
+        margin: 30px;
+    }
+
+    nav a{
+        display: block;
+        padding: 15px;
+        margin-left: 10%;
+    }
+
+    #img_one, #img_two, #img_three, #img_four, #img_five, #img_six {
+        margin-top: 50px;
+    }
+
+    #social_two {
+        align-self: start;
+    }
+    
+    .logo{
+        width: 80px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    /* Why cant I find a way to format everything else here? */
+    #footer_paragraph p {
+        text-justify: center;
+    }
+
+    #footer_one, #footer_two, #footer_three, #footer_four {
+        text-align: center;
+    }
+    
+    #acting-headline-one, #acting-headline-two, #acting-headline-three {
+        display: block;
+        justify-self: center;
+    }
+
+    .acting_one, .acting_two, .acting_three{
+        margin: 30px;
+        margin-top: 100px;
+        box-shadow: 0px 0px 15px #ff1e00;
+    }
+
+    #writing-title {
+        margin: 10px;
+    }
+
+    #writing-title {
+        margin: 30px;
+    }
+
+    /* Lets change some stuff */
+
+    .writing-main {
+        display:block; 
+    }
+
+    #library-img {
+        width: 95%; 
+        margin: 2.5%;
+        
+    }
+
+
+
+    #second_button {
+        width: 50px; 
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    #img-box {
+        width: 100%; 
+    }
+
+    #poem-title {
+        text-align: center;
+    }
+
+
+
+
+
+/* Button code starts here */
+
+    #gallery{
+        margin: 0px auto; 
+        margin-bottom: 200px;
+    }
+
+    .btn{
+        border: none;
+        outline: none; 
+        background: rgb(255, 255, 255);
+        padding: 10px 30px; 
+        cursor: pointer; 
+        margin: 10px auto;
+    }
+
 }

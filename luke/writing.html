@@ -7,10 +7,10 @@
         <title>Handcrafts</title>
         <link rel="stylesheet" href="styles/style.css"/>
     </head>
-    <body>
-        <div id="header_box">
+    <body id="writing_body">
+        <div id="writing_header_box">
             <header>
-                <a id="logo_link" href="index.html">
+                <a id="logo" href="index.html">
                     <img class="logo" src="images/logo.png" alt="Logo">
                 </a>
                 <nav>
@@ -20,12 +20,11 @@
                     <p> | </p>
                     <a href="writing.html">Writing</a>
                     <p> | </p>
-                    <a href="site-plan.html"></a>
+                    <a href="site-plan.html">Site Plan</a>
                 </nav>
             </header>
         </div>
         <div id="writing-title">
-            <img id="library-img" src="images/slim_library.PNG" alt="Content unretrivable">
             <div id="writing-title-msg">
                 <p>
                     Out of all the arts that I have engaged in I have been a creative writer the longest. 
@@ -36,6 +35,8 @@
             </div>
         </div>
         <main class="writing-main">
+
+            <img id="library-img" src="images/slim_library.PNG" alt="Content unretrivable">
             
             <!-- Image gallery -->
             <div id="gallery">
@@ -45,34 +46,48 @@
             </div>
 
             <!-- Next and Prev Buttons -->
-            <button class="btn" type="submit" onclick="prev()"> <img src="images/backward.png" alt="Previous"> </button>
-            <button class="btn" type="submit" onclick="next()"> <img src="images/forward.png" alt="Next"> </button>
-            
+            <dev id="prev_button">
+                <button class="btn" type="submit" onclick="prev()"> <img id="first_button" src="images/backward.png" alt="Previous"> </button>
+            </dev>
+            <dev id="next_button">
+                <button class="btn" type="submit" onclick="next()"> <img id="second_button" src="images/forward.png" alt="Next"> </button>
+            </dev>
+
             <section class="writing_two">
-                <h3 id="poem-title">Try your best:</h3>
-                <p id="poem-subtext">Written at age 14</p>
+                <div id="poem-title">
+                    <h3 id="poem-title-msg">Do your best:</h3>
+                    <p id="poem-subtext">Written at age 14</p>
+                </div>
                 <img id="poem_img" src="images/poem.png" alt="Image unretrivable">
             </section>
         
         </main>
-        <footer>
-            <p>Art Portfolio &copy; 2022 - Luke Bullock</p>
-            <p>Email: GlimGrold2001@gmail.com</p>
-            <p>Phone number: (403)-795-0047</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
+        <div id="writing_footer_box">
+            <footer>
+                <p id="footer_one">Art Portfolio &copy; 2022 - Luke Bullock</p>
+                <p id="footer_two">Email: GlimGrold2001@gmail.com</p>
+                <p id="footer_three">Phone number: (403)-795-0047</p>
+                <p id="footer_four"><a href="site-plan.html">Site Plan</a></p>
 
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/linkedin.png" alt="In icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
-            </div>
-        </footer>
+                <div class="social">
+                    <div id="social_one"></div>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.png" alt="fb icon">
+                        </a>
+                    </div>
+                    <div id="social_two">
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="images/linkedin.png" alt="In icon">
+                        </a>
+                    </div>
+                    <div id="social_three">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/instagram.png" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
         <script src="js/writing.js"></script>
     </body>
 </html>
