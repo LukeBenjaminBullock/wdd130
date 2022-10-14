@@ -470,7 +470,9 @@ h3 {
   }
   
   /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+
+  /* ! I have commented out the following text, as it only makes a partial line. */
+  /* .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -479,7 +481,7 @@ h3 {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
+  } */
   
   /* Container around content */
   .container {
