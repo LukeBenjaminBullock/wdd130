@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Handcrafts</title>
+        <title>Writing</title>
         <link rel="stylesheet" href="styles/style.css"/>
     </head>
     <body id="writing_body">
@@ -14,7 +14,9 @@
                     <img class="logo" src="images/logo.png" alt="Logo">
                 </a>
                 <nav>
-                    <a href="index.html">Handcrafts</a>
+                    <a href="index.html">Home</a>
+                    <p> | </p>
+                    <a href="handcrafts.html">Handcrafts</a>
                     <p> | </p>
                     <a href="acting.html">Acting</a>
                     <p> | </p>
@@ -38,19 +40,21 @@
 
             <img id="library-img" src="images/slim_library.PNG" alt="Content unretrivable">
             
-            <!-- Image gallery -->
-            <div id="gallery">
-                <div id="img-box">
-                    <img id="one" src="images/mini_book/one.png" alt="">
+            <dev id="book">
+                <!-- Image gallery -->
+                <div id="gallery">
+                    <div id="img-box">
+                        <img id="one" src="images/mini_book/one.png" alt="">
+                    </div>
                 </div>
-            </div>
 
-            <!-- Next and Prev Buttons -->
-            <dev id="prev_button">
-                <button class="btn" type="submit" onclick="prev()"> <img id="first_button" src="images/backward.png" alt="Previous"> </button>
-            </dev>
-            <dev id="next_button">
-                <button class="btn" type="submit" onclick="next()"> <img id="second_button" src="images/forward.png" alt="Next"> </button>
+                <!-- Next and Prev Buttons -->
+                <dev id="prev_button">
+                    <button class="bttn" type="submit" onclick="prev()">&#10094; </button>
+                </dev>
+                <dev id="next_button">
+                    <button class="bttn" type="submit" onclick="next()">&#10095; </button>
+                </dev>
             </dev>
 
             <section class="writing_two">
@@ -58,8 +62,10 @@
                     <h3 id="poem-title-msg">Do your best:</h3>
                     <p id="poem-subtext">Written at age 14</p>
                 </div>
-                <img id="poem_img" src="images/poem.png" alt="Image unretrivable">
-            </section>
+                <div id="poem_img">
+                    <img class="poem_img" src="images/poem.png" alt="Image unretrivable">
+                </div>
+                </section>
         
         </main>
         <div id="writing_footer_box">
@@ -70,7 +76,7 @@
                 <p id="footer_four"><a href="site-plan.html">Site Plan</a></p>
 
                 <div class="social">
-                    <div id="social_one"></div>
+                    <div id="social_one">
                         <a href="https://facebook.com" target="_blank">
                             <img src="images/facebook.png" alt="fb icon">
                         </a>
