@@ -9,7 +9,7 @@
     --paragraph-font: Marck Script, cursive, sans-serif;
 }
 
-/* Header */
+/* * Header */
 
 header{
     display: grid; 
@@ -56,7 +56,7 @@ nav a:hover {
     box-shadow: 10px 10px 30px #442af1;
 }
 
-/* Footer */
+/* * Footer */
 
 #home_footer_box{
     box-shadow: 10px 10px 30px #55f12a;
@@ -147,7 +147,7 @@ footer a:hover {
 }
 
 
-/* Handcrafts body */
+/* * Handcrafts body */
 
 p {
     justify-self: center;
@@ -240,7 +240,7 @@ body{
     background-color: #0000002f;
 }
 
-/* Acting Body */
+/* * Acting Body */
 
 #acting_body{
 background-color: #000000;
@@ -314,7 +314,7 @@ h3 {
     color: white;
 }
 
-/* Writing Body */
+/* * Writing Body */
 
 #writing_body{
     background-color: #ffffff;
@@ -425,7 +425,7 @@ h3 {
         justify-content: center;
     }
 
-    /* home Body */
+    /* * Home Body */
 
     #divider {
         margin: 300px;
@@ -455,7 +455,7 @@ h3 {
     margin: 10px auto;
 }
 
-/* Timeline component */
+/* * Timeline component */
 
 * {
     box-sizing: border-box;
@@ -589,7 +589,7 @@ h3 {
     }
   }
 
-  /* Slideshow Component */
+  /* *Slideshow Component */
 
   * {box-sizing:border-box}
 
@@ -680,7 +680,7 @@ h3 {
   to {opacity: 1}
 }
 
-/* And of course, some changes for mobile devices */
+/* * And of course, some changes for mobile devices */
 
 @media screen and (max-width: 900px) {
 
