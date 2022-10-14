@@ -427,8 +427,12 @@ h3 {
 
     /* * Home Body */
 
-    #divider {
+    #divider{
         margin: 300px;
+    }
+
+    #divider_two{
+        margin: 150px; 
     }
 
     #home-title{
@@ -437,6 +441,16 @@ h3 {
 
     #home-title-msg{
         margin: 150px;
+    }
+
+    #timeline-title{
+        font-size: 80px;
+        font-family: var(--paragraph-font);
+        color: #ff8543;
+        display: block; 
+        text-align: center;
+
+
     }
 
 /* Button code starts here */
