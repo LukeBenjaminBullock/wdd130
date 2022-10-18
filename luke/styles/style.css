@@ -455,13 +455,17 @@ h3 {
     }
 
     #timeline-title{
-        font-size: 80px;
+        font-size: 40px;
         font-family: var(--paragraph-font);
         color: #ff8543;
         display: block; 
         text-align: center;
 
 
+    }
+
+    #timeline-title h1 {
+        font-weight: lighter;
     }
 
 /* Button code starts here */
@@ -497,7 +501,7 @@ h3 {
   /* The actual timeline (the vertical ruler) */
 
   /* ! I have commented out the following text, as it only makes a partial line. */
-  /* .timeline::after {
+   .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -506,7 +510,7 @@ h3 {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  } */
+  } 
   
   /* Container around content */
   .container {
