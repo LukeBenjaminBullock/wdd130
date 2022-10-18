@@ -6,7 +6,7 @@
 :root{
     /* change the values below to your chosen font(s) */
     --heading-font: "Nova Cut";
-    --paragraph-font: Marck Script, cursive, sans-serif;
+    --paragraph-font: Marck Script, normal, sans-serif;
 }
 
 /* * Header */
@@ -394,31 +394,41 @@ h3 {
         border-radius: 3px 0 0 3px;
     }
 
-    #prev_button:hover, #next_button:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
+#prev_button:hover, #next_button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
 
 
-    #img-box {
-        width: 100%; 
-    }
+#img-box {
+    width: 100%; 
+}
 
-    #one {
-        width: 80%;
-        margin: 10%;
-        max-width: 800px;
-        display:block; 
-        margin: 0 auto; 
-    }
-
-    #poem-title {
-        text-align: center;
-    }
-
-.poem-img{
+#one {
+    width: 80%;
+    margin: 10%;
+    max-width: 800px;
     display:block; 
-    width: 60%;
+    margin: 0 auto; 
+}
+
+#poem-title {
     text-align: center;
+    grid-column: 2/3;
+}
+
+#poem_img{ 
+    max-width: 100%;
+    grid-column: 2/3; 
+}
+
+.poem_imagery {
+    max-width: 100%
+}
+
+.writing_two{ 
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
 }
 
     #gallery {
@@ -441,6 +451,7 @@ h3 {
 
     #home-title-msg{
         margin: 150px;
+        color:#48ff00
     }
 
     #timeline-title{
@@ -740,9 +751,6 @@ h3 {
     }
 
     /* Why cant I find a way to format everything else here? */
-    #footer_paragraph p {
-        text-justify: center;
-    }
 
     #footer_one, #footer_two, #footer_three, #footer_four {
         text-align: center;
