@@ -422,12 +422,12 @@ h3 {
 }
 
 .poem_imagery {
-    max-width: 100%
+    width: 100%
 }
 
 .writing_two{ 
     display: grid; 
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: auto auto auto;
 }
 
@@ -451,7 +451,8 @@ h3 {
 
     #home-title-msg{
         margin: 150px;
-        color:#48ff00
+        color:#48ff00;
+        -webkit-text-stroke: .5px rgb(0, 0, 0); 
     }
 
     #timeline-title{
